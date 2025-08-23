@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 246, 246);
+}
+
+#container {
+  background-color: rgb(124, 120, 120);
+  margin: auto;
+  max-width: 350px;
+  height: 480px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+#output {
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  width: 300px;
+  margin-top: 25px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(211, 204, 204);
+  font-size: 1.5rem;
+}
+
+#btn-1 {
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+button {
+  width: 66px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(211, 204, 204);
+}
