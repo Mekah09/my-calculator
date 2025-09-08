@@ -3,10 +3,19 @@ function addToDisplay(value) {
   document.getElementById('outPut').value += value;
 }
 
-// To compute the result
+// To compute the results
 function compute() {
-  let result = eval(document.getElementById('outPut').value);
-  document.getElementById('outPut').value = result;
+  let input = document.getElementById('outPut').value;
+
+  //Check for divide by zero
+  if (eval(input) == Infinity || eval(input) == -Infinity) {
+    alert("Cannot divide by zero");
+  }
+  //Compute normally
+  else {
+    let result = eval(input);
+    document.getElementById('outPut').value = result;
+  }
 }
 
 // To delete the last character
